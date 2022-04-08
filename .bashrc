@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[34m\]@\[\033[34m\]\h\[\033[00m\] \[\033[01;35m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u\[\033[34m\]@\[\033[34m\]\h\[\033[00m\] \[\033[01;35m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash

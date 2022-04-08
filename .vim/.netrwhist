@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/riley/repos/388/p5-forensics/.git'
+let g:netrw_dirhist_6='/home/riley/repos/mrover-workspace/Docker'
+let g:netrw_dirhist_5='/home/riley/repos/mrover-workspace/pip_deps'
+let g:netrw_dirhist_4='/home/riley/repos/388/p3-net'
+let g:netrw_dirhist_3='/home/riley'
+let g:netrw_dirhist_2='/home/riley/repos/eecs367/kineval-repo/kineval'
+let g:netrw_dirhist_1='/home/riley/Desktop/misc_code/test'
