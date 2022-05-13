@@ -1,1 +1,1 @@
-apt install vim git make gcc libx11-dev libxinerama-dev libxft-dev libxcb-res0-dev libx11-xcb-dev
+apt install vim git make gcc libx11-dev libxinerama-dev libxft-dev libxcb-res0-dev libx11-xcb-dev xorg xinit fonts-hack-ttf
