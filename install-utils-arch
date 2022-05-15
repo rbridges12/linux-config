@@ -1,0 +1,1 @@
+pacman -Sy xorg-server xorg-xinit git libxinerama libxft ttf-hack
