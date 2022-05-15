@@ -1,1 +1,5 @@
 pacman -Sy xorg-server xorg-xinit git libxinerama libxft ttf-hack
+cd /opt
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
