@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-scale '/home/riley/Downloads/beach_wave.jpeg' 
