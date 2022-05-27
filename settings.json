@@ -1,0 +1,26 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "window.menuBarVisibility": "hidden",
+    "window.enableMenuBarMnemonics": true,
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "editor.fontSize": 16,
+    "cmake.configureOnOpen": false,
+    "window.zoomLevel": 1,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.useSystemClipboard": true
+}
