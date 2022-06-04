@@ -1,0 +1,12 @@
+cp -r .dwm ~/
+cp -r .vim ~/
+cp .vimrc ~/
+cp .bashrc ~/
+cp .xinitrc ~/
+cp .Xresources ~/
+cp .fehbg ~/
+
+mkdir -p ~/.config/redshift
+cp redshift.conf ~/
+
+

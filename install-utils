@@ -1,1 +1,27 @@
-apt install vim git make gcc libx11-dev libxinerama-dev libxft-dev libxcb-res0-dev libx11-xcb-dev xorg xinit fonts-hack-ttf
+apt install \
+
+# basic dev stuff
+vim \
+git \
+make \
+gcc \
+build-essential \
+
+# dwm build dependencies
+libx11-dev \
+libxinerama-dev \
+libxft-dev \
+libxcb-res0-dev \
+libx11-xcb-dev \
+
+# X11
+xorg \
+xinit \
+
+# system fonts
+fonts-hack-ttf \
+fonts-font-awesome \
+
+# misc utils
+redshift \
+feh \
