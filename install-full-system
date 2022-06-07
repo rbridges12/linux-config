@@ -7,12 +7,14 @@ git clone https://github.com/rbridges12/dwm
 git clone https://github.com/rbridges12/dmenu
 git clone https://github.com/rbridges12/slstatus
 git clone https://github.com/rbridges12/st
+git clone https://github.com/Hendrikto/backlight_control.git
 
 # build core apps
 cd dwm/ && sudo make install
 cd dmenu/ && sudo make install
 cd slstatus/ && sudo make install
 cd st/ && sudo make install
+cd backlight_control/ && make && sudo make install
 
 # setup configs
 ../linux-config/setup-config-files
