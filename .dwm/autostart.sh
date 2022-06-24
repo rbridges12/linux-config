@@ -10,4 +10,5 @@ elif [[ $NUM_DISPLAYS == "1" ]]; then
     xrandr --output eDP-1 --primary --auto
 fi
 
-feh --bg-scale ~/Downloads/beach_wave.jpeg
+feh --bg-fill gorskii_lilac.jpg
+# feh --bg-fill dirt_road_painting.png
