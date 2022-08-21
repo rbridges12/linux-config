@@ -69,9 +69,15 @@ bindkey '^R' history-incremental-search-backwards
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
+# lazy aliases
+alias gs="git status"
+
 # source ROS setup files
 source /opt/ros/noetic/setup.zsh
 source ~/lab_ws/devel/setup.zsh
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# put local executables on PATH
+export PATH="/home/$USER/.local/bin:$PATH"
