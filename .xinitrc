@@ -6,5 +6,4 @@ xinput --set-prop 12 356 1
 
 xrdb -merge ~/.Xresources
 redshift -c ~/.config/redshift/redshift.conf &
-slstatus &
-exec dwm > ~/.dwm.log
+exec i3 > ~/i3_log.txt

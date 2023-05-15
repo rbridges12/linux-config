@@ -1,0 +1,8 @@
+[user]
+	email = rlybrdgs@gmail.com
+	name = Riley Bridges
+	signingkey = 283F43A27D305C94
+[commit]
+	gpgsign = true
+[core]
+	editor = vim

@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias up='sudo apt update && sudo apt upgrade'
+#alias rm='echo "moving to trash" && trash-put'
 #alias code='codium'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -117,5 +118,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export PATH="$HOME/.local/bin:$PATH"
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash

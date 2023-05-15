@@ -7,6 +7,6 @@ cp .Xresources ~/
 cp .fehbg ~/
 
 mkdir -p ~/.config/redshift
-cp redshift.conf ~/
+cp redshift.conf ~/.config/redshift
 
 

@@ -7,6 +7,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
+# fzf
+# source /usr/share/fzf/key-bindings.zsh
+# source /usr/share/fzf/ completion.zsh
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -71,10 +75,14 @@ bindkey '^R' history-incremental-search-backwards
 
 # lazy aliases
 alias gs="git status"
+alias up="sudo apt update && sudo apt upgrade"
+alias run_matlab='matlab -softwareopengl -r "setenv('TMPDIR', '/home/riley/.matlab_tmp_dir')"'
+alias sl="systemctl suspend"
 
 # source ROS setup files
 source /opt/ros/noetic/setup.zsh
-source ~/lab_ws/devel/setup.zsh
+source ~/catkin_ws/devel/setup.zsh
+#source ~/lab_ws/devel/setup.zsh
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

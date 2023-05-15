@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/riley/Downloads/beach_wave.jpeg' 
+feh --no-fehbg --bg-fill '/home/riley/.config/i3/night_mountain_background.jpg' 

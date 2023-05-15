@@ -1,0 +1,19 @@
+cp -r ~/.dwm .
+# cp -r ~/.vim .
+cp -r ~/.talon/user ./talon_user
+# cp -r ~/.spaceVim.d .
+# cp ~/.vimrc .
+cp ~/.bashrc .
+cp ~/.zshrc .
+cp ~/.xinitrc .
+cp ~/.Xresources .
+cp ~/.fehbg .
+cp ~/.config/Code/User/settings.json .
+cp ~/.config/.tmux.conf .
+# cp ~/.ssh/config ssh_config
+cp ~/.gitconfig .
+cp -r ~/.config/polybar .
+
+cp ~/.config/redshift/redshift.conf .
+
+

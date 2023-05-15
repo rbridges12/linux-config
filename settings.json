@@ -1,26 +1,43 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.startupEditor": "none",
-    "editor.minimap.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "redhat.telemetry.enabled": false,
-    "telemetry.telemetryLevel": "off",
-    "[html]": {
-        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "window.menuBarVisibility": "hidden",
-    "window.enableMenuBarMnemonics": true,
-    "editor.bracketPairColorization.enabled": true,
-    "workbench.statusBar.visible": true,
+    "editor.lineNumbers": "relative",
     "workbench.activityBar.visible": false,
-    "editor.fontSize": 16,
-    "cmake.configureOnOpen": false,
-    "window.zoomLevel": 1,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    "cmake.configureOnOpen": true,
+    "editor.minimap.enabled": false,
+    "vim.useSystemClipboard": true,
+    "keyboard.dispatch": "keyCode",
+    "python.analysis.autoImportCompletions": false,
+    "redhat.telemetry.enabled": false,
+    "window.menuBarVisibility": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.mode": "manual",
+    "json.schemaDownload.enable": false,
+    "zenMode.centerLayout": false,
+    "editor.lineDecorationsWidth": 0,
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
-    "vim.useSystemClipboard": true
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/home/riley/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editSessions.autoResume": "off",
+    "glassit.alpha": 140,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "window.zoomLevel": 1
 }
