@@ -7,12 +7,12 @@ make \
 gcc \
 build-essential \
 
-# dwm build dependencies
-libx11-dev \
-libxinerama-dev \
-libxft-dev \
-libxcb-res0-dev \
-libx11-xcb-dev \
+# # dwm build dependencies
+# libx11-dev \
+# libxinerama-dev \
+# libxft-dev \
+# libxcb-res0-dev \
+# libx11-xcb-dev \
 
 # X11
 xorg \
@@ -25,4 +25,7 @@ fonts-font-awesome \
 # misc utils
 redshift \
 feh \
-pavucontrol-qt
+pavucontrol-qt \
+neofetch \
+htop \
+

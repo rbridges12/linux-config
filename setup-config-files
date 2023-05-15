@@ -1,10 +1,16 @@
-cp -r .dwm ~/
-cp -r .vim ~/
-cp .vimrc ~/
+# cp -r .dwm ~/
+# cp -r .vim ~/
+# cp .vimrc ~/
 cp .bashrc ~/
+cp .zshrc ~/
 cp .xinitrc ~/
 cp .Xresources ~/
 cp .fehbg ~/
+cp settings.json ~/.config/Code/User/
+cp .tmux.conf ~/.config/
+cp .gitconfig ~/
+cp -r polybar ~/.config/
+cp -r talon_user ~/.talon/user
 
 mkdir -p ~/.config/redshift
 cp redshift.conf ~/.config/redshift
