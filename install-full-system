@@ -20,8 +20,9 @@ cd ~/repos/backlight_control/ && make && sudo make install
 cd ~/
 wget https://talonvoice.com/dl/latest/talon-linux.tar.xz
 tar -xvf talon-linux.tar.xz
-cp run_talon.sh talon/
-ln -s ~/talon/run_talon.sh /usr/bin/talon
+rm talon-linux.tar.xz
+cp ~/repos/linux_config/run_talon.sh talon/
+sudo ln -s ~/talon/run_talon.sh /usr/bin/talon
 
 # polybar
 cd ~/repos

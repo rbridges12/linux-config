@@ -23,6 +23,7 @@ python3-pip
 
 sudo add-apt-repository -y ppa:regolith-linux/release
 sudo apt update
+sudo apt purge -y i3*
 sudo apt install -y i3-gaps
 
 sudo apt install -y build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
