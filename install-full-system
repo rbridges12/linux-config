@@ -2,7 +2,7 @@
 ./install-utils
 
 # clone core system apps
-cd ..
+cd ~/repos
 # git clone https://github.com/rbridges12/dwm
 # git clone https://github.com/rbridges12/dmenu
 # git clone https://github.com/rbridges12/slstatus
@@ -13,14 +13,25 @@ git clone https://github.com/Hendrikto/backlight_control.git
 # cd dwm/ && sudo make install
 # cd dmenu/ && sudo make install
 # cd slstatus/ && sudo make install
-cd st/ && sudo make install
-cd backlight_control/ && make && sudo make install
+cd ~/repos/st/ && sudo make install
+cd ~/repos/backlight_control/ && make && sudo make install
 
 # talon
 cd ~/
 wget https://talonvoice.com/dl/latest/talon-linux.tar.xz
 tar -xvf talon-linux.tar.xz
-cd ~/talon
+cp run_talon.sh talon/
+ln -s ~/talon/run_talon.sh /usr/bin/talon
+
+# polybar
+cd ~/repos
+git clone --recursive https://github.com/polybar/polybar
+cd polybar
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+sudo make install
 
 # setup configs
-../linux-config/setup-config-files
+~/repos/linux-config/setup-config-files

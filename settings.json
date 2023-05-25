@@ -39,5 +39,6 @@
         "jsdelivr.com",
         "unpkg.com"
     ],
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.inlineSuggest.enabled": true
 }

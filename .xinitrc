@@ -5,5 +5,6 @@ setxkbmap -option caps:escape
 xinput --set-prop 12 356 1
 
 xrdb -merge ~/.Xresources
+export $(dbus-launch)
 redshift -c ~/.config/redshift/redshift.conf &
 exec i3 > ~/i3_log.txt

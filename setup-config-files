@@ -10,7 +10,8 @@ cp settings.json ~/.config/Code/User/
 cp .tmux.conf ~/.config/
 cp .gitconfig ~/
 cp -r polybar ~/.config/
-cp -r talon_user ~/.talon/user
+cp -r user ~/.talon/
+cp -r i3 ~/.config/
 
 mkdir -p ~/.config/redshift
 cp redshift.conf ~/.config/redshift
