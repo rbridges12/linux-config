@@ -1,3 +1,5 @@
+cd ~/repos/linux-config
+
 # cp -r .dwm ~/
 # cp -r .vim ~/
 # cp .vimrc ~/
