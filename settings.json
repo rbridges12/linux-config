@@ -1,5 +1,6 @@
 {
     "editor.lineNumbers": "relative",
+    "editor.wordWrap": "on",
     "workbench.activityBar.visible": false,
     "cmake.configureOnOpen": true,
     "editor.minimap.enabled": false,
@@ -40,5 +41,10 @@
         "unpkg.com"
     ],
     "window.zoomLevel": 1,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "cmake.configureOnEdit": false,
+    "git.openRepositoryInParentFolders": "never",
+    "clangd.arguments": [
+        "-header-insertion=never"
+    ]
 }

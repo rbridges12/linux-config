@@ -147,7 +147,7 @@ punctuation_words = {
     "coma": ",",
     "period": ".",
     "full stop": ".",
-    "semicolon": ";",
+    "semi": ";",
     "colon": ":",
     "forward slash": "/",
     "question mark": "?",
@@ -158,6 +158,7 @@ punctuation_words = {
     "number sign": "#",
     "percent sign": "%",
     "at sign": "@",
+    "ref": "&",
     "and sign": "&",
     "ampersand": "&",
     # Currencies

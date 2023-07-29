@@ -75,6 +75,9 @@ bindkey '^R' history-incremental-search-backwards
 
 # lazy aliases
 alias gs="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
 alias up="sudo apt update && sudo apt upgrade"
 alias run_matlab='matlab -softwareopengl -r "setenv('TMPDIR', '/home/riley/.matlab_tmp_dir')"'
 alias sl="systemctl suspend"

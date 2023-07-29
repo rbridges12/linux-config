@@ -202,5 +202,8 @@ bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
 
 #exec --no-startup-id feh --bg-scale /home/riley/.config/i3/background.jpg
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
+exec_always --no-startup-id snixembed --fork &
+exec_always --no-startup-id killall talon && talon &
+# exec_always --no-startup-id talon &
 
 

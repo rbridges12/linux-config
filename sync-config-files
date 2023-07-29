@@ -10,6 +10,7 @@ cp ~/.Xresources .
 cp ~/.fehbg .
 cp ~/.config/Code/User/settings.json .
 cp ~/.config/.tmux.conf .
+cp -r ~/.config/i3 .
 # cp ~/.ssh/config ssh_config
 cp ~/.gitconfig .
 cp -r ~/.config/polybar .
