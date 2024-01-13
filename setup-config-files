@@ -3,14 +3,14 @@ cd ~/repos/linux-config
 # cp -r .dwm ~/
 # cp -r .vim ~/
 # cp .vimrc ~/
-cp .bashrc ~/
-cp .zshrc ~/
+# cp .bashrc ~/
+# cp .zshrc ~/
 cp .xinitrc ~/
 cp .Xresources ~/
 cp .fehbg ~/
-cp settings.json ~/.config/Code/User/
-cp .tmux.conf ~/.config/
-cp .gitconfig ~/
+# cp settings.json ~/.config/Code/User/
+# cp .tmux.conf ~/.config/
+# cp .gitconfig ~/
 cp -r polybar ~/.config/
 cp -r user ~/.talon/
 cp -r i3 ~/.config/
