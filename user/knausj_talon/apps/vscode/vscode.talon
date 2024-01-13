@@ -238,8 +238,8 @@ terminal scroll down: user.vscode("workbench.action.terminal.scrollDown")
 terminal <number_small>: user.vscode_terminal(number_small)
 
 #TODO: should this be added to linecommands?
-copy line down: user.vscode("editor.action.copyLinesDownAction")
-copy line up: user.vscode("editor.action.copyLinesUpAction")
+#copy line down: user.vscode("editor.action.copyLinesDownAction")
+#copy line up: user.vscode("editor.action.copyLinesUpAction")
 
 #Expand/Shrink AST Selection
 select less: user.vscode("editor.action.smartSelect.shrink")
@@ -277,4 +277,5 @@ cell run: user.vscode("notebook.cell.execute")
 install local: user.vscode("workbench.extensions.action.installVSIX")
 preview markdown: user.vscode("markdown.showPreview")
 
-center: zz
+line center: "zz"
+line top: "zt"

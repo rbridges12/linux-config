@@ -28,6 +28,7 @@ bool
 RTCM
 RTCMs
 ls,Ellis
+ls,LS
 roscore
 rospy
 rosrun
@@ -44,3 +45,19 @@ rviz
 matplotlib
 3d
 manif
+exp
+approx
+EECS
+bmatrix
+linspace
+tau,tow
+mathcal
+kalman
+ref
+gaussian,gowshen
+discretized
+stabilizable
+textbf,text BF
+mathbb,math BB
+constexpr
+neofetch

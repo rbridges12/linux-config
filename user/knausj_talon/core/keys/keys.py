@@ -172,7 +172,6 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "point": ".",
     "quote": "'",
     "question": "?",
     "apostrophe": "'",
@@ -248,7 +247,7 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    "wipe": "backspace",
+    # "wipe": "backspace",
     "delete": "backspace",
     #'junk': 'backspace',
     "forward delete": "delete",

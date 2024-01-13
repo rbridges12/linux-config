@@ -1,4 +1,4 @@
-cp -r ~/.dwm .
+# cp -r ~/.dwm .
 # cp -r ~/.vim .
 cp -r ~/.talon/user .
 # cp -r ~/.spaceVim.d .

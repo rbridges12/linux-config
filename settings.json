@@ -1,9 +1,7 @@
 {
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
-    "workbench.activityBar.visible": false,
     "cmake.configureOnOpen": true,
-    "editor.minimap.enabled": false,
     "vim.useSystemClipboard": true,
     "keyboard.dispatch": "keyCode",
     "python.analysis.autoImportCompletions": false,
@@ -46,5 +44,16 @@
     "git.openRepositoryInParentFolders": "never",
     "clangd.arguments": [
         "-header-insertion=never"
-    ]
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden"
 }

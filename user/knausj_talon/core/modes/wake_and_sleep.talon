@@ -15,3 +15,5 @@ mode: all
     user.engine_sleep()
 ^asleep [<phrase>]$: speech.disable()
 ^(awake)+$: speech.enable()
+
+key(super-space): user.toggle_speech()

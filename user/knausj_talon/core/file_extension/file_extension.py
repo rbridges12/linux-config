@@ -33,6 +33,7 @@ _file_extensions_defaults = {
     "tot csv": ".csv",
     "dot cassie": ".csv",
     "dot text": ".txt",
+    "dot latex": ".tex",
     "dot julia": ".jl",
     "dot J L": ".jl",
     "dot html": ".html",
