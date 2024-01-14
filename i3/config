@@ -200,10 +200,8 @@ client.focused          #5C51FC #5C51FC #FFFFFF #F0C674 #F0C674
 
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
 
-#exec --no-startup-id feh --bg-scale /home/riley/.config/i3/background.jpg
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
 exec_always --no-startup-id snixembed --fork &
-exec_always --no-startup-id killall talon && talon &
-# exec_always --no-startup-id talon &
+exec_always --no-startup-id ~/.config/i3/start_talon.sh > ~/talon_log.txt 2>&1
 
 
