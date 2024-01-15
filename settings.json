@@ -54,6 +54,5 @@
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    "editor.minimap.enabled": false,
-    "workbench.activityBar.location": "hidden"
+    "editor.minimap.enabled": false
 }
