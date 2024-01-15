@@ -24,7 +24,10 @@ TODO: find actual explanation/solution
 when you apt install i3-gaps and then attempt to run i3wm with gaps in the config file, it always seems to fail (this probably means there's something weird going on that is causing it not to be installed). To fix this, you can run `sudo apt purge i3* && sudo apt install i3-gaps` and it somehow seems to fix the problem.
 
 ## fully transferring vscode config
-TODO
+Instead of trying to be a Linux purist and set up a script to fully copy over and transfer all of the VSCode config files to a new installation, I've chosen to just use the built in VSCode settings sync feature that does it all for me really easily. One small thing to note if you get an error about password storage when trying to log into a GitHub account is that you may have to manually tell it to use gnome keyring. Further instructions in the sources.
+
+Sources:
+- [settings sync and keychain issues](https://code.visualstudio.com/docs/editor/settings-sync)
 
 ## GPG key setup
 TODO
