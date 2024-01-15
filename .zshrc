@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias mrover="cd ~/catkin_ws/src/mrover"
 alias gs="git status"
-alias gp="git pull"
+alias gp="git push"
 alias gc="git commit"
 
 readonly CATKIN_WORKSPACE_PATH=~/catkin_ws
