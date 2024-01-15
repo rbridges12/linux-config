@@ -29,6 +29,12 @@ Instead of trying to be a Linux purist and set up a script to fully copy over an
 Sources:
 - [settings sync and keychain issues](https://code.visualstudio.com/docs/editor/settings-sync)
 
+## checking if fonts are installed
+`fc-list` will list all font font files installed on the system, along with their ordinary names and styles. `fc-match` can be used to test a font pattern.
+
+Sources:
+- [polybar docs](https://github.com/polybar/polybar/wiki/Fonts)
+
 ## GPG key setup
 TODO
 
