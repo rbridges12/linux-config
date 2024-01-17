@@ -35,6 +35,28 @@ Sources:
 Sources:
 - [polybar docs](https://github.com/polybar/polybar/wiki/Fonts)
 
+## Ryzen 7900 integrated graphics drivers
+The default ubuntu 20.04 installation does not support the AMD Radeon integrated graphics of my cpu. to get this working, I first updated mesa to a later version:
+```bash
+sudo apt install mesa-utils
+sudo add-apt-repository ppa:kisak/kisak-mesa
+sudo apt update
+sudo apt upgrade
+sudo apt --fix-broken install
+sudo apt upgrade
+```
+mesa version can be verified using `glxinfo -B`. Next, the AMD graphics driver can be installed by following the instructions [here](https://amdgpu-install.readthedocs.io/en/latest/install-prereq.html).
+
+Sources:
+- [reddit thread](https://www.reddit.com/r/linuxhardware/comments/13srn38/ubuntu_22042_and_amd_ryzen_9_7900x_video_driver/)
+- [AMD docs](https://www.reddit.com/r/linuxhardware/comments/13srn38/ubuntu_22042_and_amd_ryzen_9_7900x_video_driver/)
+
+## MediaTek MT7922 connectivity issues
+I encountered some connectivity issues with my wifi card, where every few minutes it would lose connection to the network for a few minutes. `modprobe -r mt7921e && modprobe mt7921e` seemed to fix the issue.
+
+Sources:
+- [arch wiki](https://bbs.archlinux.org/viewtopic.php?id=286981)
+
 ## GPG key setup
 TODO
 
