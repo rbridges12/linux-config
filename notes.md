@@ -60,5 +60,7 @@ Sources:
 ## GPG key setup
 TODO
 
-## MATLAB i3wm chicanery
-TODO
+## MATLAB installation/setup
+First, download the installer zip file for linux and unzip it into a directory. Then, follow the instructions in the readme as normal, by running `./install`. Follow the steps and the installer as normal except for the location to install MATLAB. Instead of the default location, choose a location in the user folder, such as `/home/riley/matlab/R20XXa`. This will allow additional packages/add-ons to be installed in place without MATLAB needing sudo privileges (this also means we don't need to run `./install` with sudo).
+
+Once installed, the rendered fought may look terrible due to antialiasing being turned off by default (why matlab?). To fix this, go to settings->fonts and there is a small checkbox at the bottom of the form allowing you to turn it on. Additionally, the new UI for matlab (including dark mode) can be installed via the add-ons menu. Search for "New MATLAB Desktop (beta)".
