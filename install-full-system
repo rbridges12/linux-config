@@ -22,7 +22,7 @@ wget https://talonvoice.com/dl/latest/talon-linux.tar.xz
 tar -xvf talon-linux.tar.xz
 rm talon-linux.tar.xz
 cp ~/repos/linux_config/run_talon.sh talon/
-sudo ln -s ~/talon/run_talon.sh /usr/bin/talon
+sudo ln -s ~/talon/run_talon.sh /usr/local/bin/talon
 
 # polybar
 cd ~/repos
