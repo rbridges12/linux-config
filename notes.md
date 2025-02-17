@@ -26,8 +26,11 @@ when you apt install i3-gaps and then attempt to run i3wm with gaps in the confi
 ## fully transferring vscode config
 Instead of trying to be a Linux purist and set up a script to fully copy over and transfer all of the VSCode config files to a new installation, I've chosen to just use the built in VSCode settings sync feature that does it all for me really easily. One small thing to note if you get an error about password storage when trying to log into a GitHub account is that you may have to manually tell it to use gnome keyring. Further instructions in the sources.
 
+In order to make the latex-workshop extension work, you also need to install texlive and latexmk: `sudo apt install texlive latexmk`.
+
 Sources:
 - [settings sync and keychain issues](https://code.visualstudio.com/docs/editor/settings-sync)
+- [latex-workshop](https://nevalsar.hashnode.dev/compiling-latex-with-ubuntu-and-visual-studio-code)
 
 ## checking if fonts are installed
 `fc-list` will list all font font files installed on the system, along with their ordinary names and styles. `fc-match` can be used to test a font pattern.
@@ -66,3 +69,9 @@ First, download the installer zip file for linux and unzip it into a directory. 
 To allow matlab to be launched from dmenu, create a script that runs matlab with the `-desktop` option (see run_matlab.sh). Then create a symbolic link to this script: `sudo ln -s /path/to/script/run_matlab.sh /usr/local/bin/matlab`.
 
 Once installed, the rendered fought may look terrible due to antialiasing being turned off by default (why matlab?). To fix this, go to settings->fonts and there is a small checkbox at the bottom of the form allowing you to turn it on. Additionally, the new UI for matlab (including dark mode) can be installed via the add-ons menu. Search for "New MATLAB Desktop (beta)".
+
+## Bluetooth problems with Airpods
+For some reason you have to change a setting in the bluetooth configuration.
+
+Sources:
+- [ubuntu wiki](https://askubuntu.com/questions/1408647/unable-to-pair-airpods-pro-with-ubuntu-22-04)

@@ -279,3 +279,5 @@ preview markdown: user.vscode("markdown.showPreview")
 
 line center: "zz"
 line top: "zt"
+
+constexpr: "constexpr"

@@ -60,3 +60,4 @@ wc -l,word count lines
 wc,word count
 who
 whoami,who am I
+minicom,mini com
