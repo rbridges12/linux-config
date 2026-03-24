@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# add my own autocomplete folder
+fpath=($HOME/completion_zsh $fpath)
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -8,7 +11,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="mrover"
+ZSH_THEME="lukerandall"
+# ZSH_THEME="random"
+# ZSH_THEME="mrover"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +75,14 @@ ZSH_THEME="mrover"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenvwrapper fzf)
+plugins=(
+    git 
+    virtualenvwrapper 
+    fzf 
+    zsh-vi-mode 
+    zsh-syntax-highlighting 
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,21 +112,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias mrover="cd ~/catkin_ws/src/mrover"
 alias gs="git status"
-alias gp="git push"
 alias gc="git commit"
+alias ga="git add"
+alias gp="git push"
+alias gpl="git pull"
 
-readonly CATKIN_WORKSPACE_PATH=~/catkin_ws
-source /opt/ros/noetic/setup.zsh
-readonly CATKIN_SETUP_PATH=${CATKIN_WORKSPACE_PATH}/devel/setup.zsh
-if [ -f ${CATKIN_SETUP_PATH} ]; then
-    source ${CATKIN_SETUP_PATH}
-fi
+alias talon_config="code ~/.talon/user"
+alias arcli="arduino-cli"
 
-# bun completions
-[ -s "/home/mrover/.bun/_bun" ] && source "/home/mrover/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# haskell compiler?
+[ -f "/home/riley/.ghcup/env" ] && . "/home/riley/.ghcup/env" # ghcup-env

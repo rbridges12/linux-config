@@ -10,16 +10,14 @@
 	// This can help in cases where you see rendering issues in VS Code.
 	// "disable-hardware-acceleration": true,
 
-	// Enabled by default by VS Code to resolve color issues in the renderer
-	// See https://github.com/microsoft/vscode/issues/51791 for details
-	"disable-color-correct-rendering": true,
-
 	// Allows to disable crash reporting.
 	// Should restart the app if the value is changed.
 	"enable-crash-reporter": false,
 
 	// Unique id used for correlating crash reports sent from this instance.
 	// Do not edit this value.
-	"crash-reporter-id": "18b9e785-746e-4a26-bcf1-73295aa78c14",
-	"password-store": "basic"
+	"crash-reporter-id": "c2389aee-b43f-468d-984e-380821400903",
+
+	// use gnome keyring for password storage
+	"password-store": "gnome-libsecret"
 }

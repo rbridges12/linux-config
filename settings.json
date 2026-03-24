@@ -1,7 +1,7 @@
 {
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "on",
-    "cmake.configureOnOpen": true,
+    "cmake.configureOnOpen": false,
     "vim.useSystemClipboard": true,
     "keyboard.dispatch": "keyCode",
     "python.analysis.autoImportCompletions": false,
@@ -12,28 +12,33 @@
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.tree.enableStickyScroll": true,
+    "window.confirmSaveUntitledWorkspace": false,
     "update.mode": "manual",
     "json.schemaDownload.enable": false,
+    "git.openRepositoryInParentFolders": "always",
     "zenMode.centerLayout": false,
     "editor.lineDecorationsWidth": 0,
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
     "C_Cpp.intelliSenseEngine": "disabled",
-    "clangd.path": "/home/riley/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editSessions.autoResume": "off",
     "glassit.alpha": 140,
     "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
+        "language-julia.interrupt",
+        "matlab.interrupt"
     ],
     "julia.symbolCacheDownload": true,
     "julia.enableTelemetry": false,
+    "notebook.output.wordWrap": true,
+    "notebook.lineNumbers": "on",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "right"
     },
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "notebook.experimental.variablesView": true,
     "jupyter.widgetScriptSources": [
         "jsdelivr.com",
         "unpkg.com"
@@ -41,18 +46,53 @@
     "window.zoomLevel": 1,
     "editor.inlineSuggest.enabled": true,
     "cmake.configureOnEdit": false,
-    "git.openRepositoryInParentFolders": "never",
     "clangd.arguments": [
         "-header-insertion=never"
     ],
     "github.copilot.enable": {
         "*": true,
-        "plaintext": false,
+        "plaintext": true,
         "markdown": false,
         "scminput": false
     },
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
     },
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "cmake.showOptionsMovedNotification": false,
+    "MATLAB.installPath": "/home/riley/matlab/R2024a",
+    "MATLAB.telemetry": false,
+    "MATLAB.matlabConnectionTiming": "never",
+    "jupyter.askForKernelRestart": false,
+    "files.associations": {
+        "*.m": "matlab",
+        "*.talon": "yaml"
+    },
+    "haskell.manageHLS": "GHCup",
+    "workbench.colorTheme": "Palenight Theme",
+    "raspberry-pi-pico.python3Path": "/bin/python3.10",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "editor.tabSize": 2,
+    "workbench.activityBar.location": "hidden",
+    "cmake.automaticReconfigure": false,
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "hidden"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "hidden"
+        }
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "chat.viewSessions.orientation": "stacked"
 }
