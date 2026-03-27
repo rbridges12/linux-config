@@ -117,6 +117,7 @@ Sources:
 ## TODO list for saving stuff before reinstall
 - look through git repos and commit everything
 - check commonly used apps for config changes
+- .config
 - go through all userspace dirs
 - upload/copy all important local files to flashdrive or cloud
   - documents
@@ -127,3 +128,6 @@ Sources:
 
 ## git
 - set vim to default editor
+
+## latex
+Use latex workshop vscode extension, install texlive packages as the instructions for the extension say.
