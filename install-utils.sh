@@ -5,13 +5,13 @@ make \
 cmake \
 gcc \
 build-essential \
-libx11-dev \
-libxinerama-dev \
-libxft-dev \
-libxcb-res0-dev \
-libx11-xcb-dev \
-xorg \
-xinit \
+# libx11-dev \
+# libxinerama-dev \
+# libxft-dev \
+# libxcb-res0-dev \
+# libx11-xcb-dev \
+# xorg \
+# xinit \
 fonts-hack-ttf \
 fonts-font-awesome \
 redshift \
@@ -22,10 +22,10 @@ htop \
 python3 \
 python3-pip
 
-sudo add-apt-repository -y ppa:regolith-linux/release
-sudo apt update
-sudo apt purge -y i3*
-sudo apt install -y i3-gaps
+# sudo add-apt-repository -y ppa:regolith-linux/release
+# sudo apt update
+# sudo apt purge -y i3*
+# sudo apt install -y i3-gaps
 
 # polybar
 sudo apt install -y \
