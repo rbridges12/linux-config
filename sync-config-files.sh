@@ -1,8 +1,5 @@
-# cp -r ~/.dwm .
-# cp -r ~/.vim .
 cp -r ~/.talon/user .
-# cp -r ~/.spaceVim.d .
-# cp ~/.vimrc .
+cp ~/.vimrc .
 cp ~/.bashrc .
 cp ~/.zshrc .
 cp ~/.xinitrc .
@@ -14,7 +11,6 @@ cp ~/.vscode/argv.json .
 cp ~/.vscode/extensions/extensions.json .
 cp ~/.config/.tmux.conf .
 cp -r ~/.config/i3 .
-# cp ~/.ssh/config ssh_config
 cp ~/.gitconfig .
 cp -r ~/.config/polybar .
 

@@ -187,7 +187,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 for_window [class="^.*"] border pixel 2
-gaps inner 10
+gaps inner 4
 gaps outer 0
 
 # class                 border backgr text indicator child_border 
@@ -195,6 +195,7 @@ gaps outer 0
 client.focused          #5C51FC #5C51FC #FFFFFF #F0C674 #F0C674
 
 bindsym $mod+b exec --no-startup-id polybar-msg cmd toggle
+bindsym Ctrl+$mod+l exec --no-startup-id i3lock && sleep 3 && xset dpms force off
 
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot &

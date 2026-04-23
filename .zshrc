@@ -75,6 +75,7 @@ ZSH_THEME="lukerandall"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# export FZF_BASE=$ZSH/plugins
 plugins=(
     git 
     virtualenvwrapper 
@@ -123,3 +124,18 @@ alias arcli="arduino-cli"
 
 # haskell compiler?
 [ -f "/home/riley/.ghcup/env" ] && . "/home/riley/.ghcup/env" # ghcup-env
+
+DISABLE_AUTO_TITLE="true"
+set-title() {
+  # If no arguments, show usage
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: set-title <new title>"
+    return 1
+  fi
+
+  # Join all arguments into a single string
+  local title="$*"
+
+  # Set terminal (tab) title
+  print -Pn "\e]0;${title}\a"
+}
