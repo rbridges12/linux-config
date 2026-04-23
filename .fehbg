@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/riley/.config/i3/night_mountain_background.jpg' 
+feh --no-fehbg --bg-fill '/usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg' 

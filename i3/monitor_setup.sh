@@ -25,11 +25,6 @@ elif [[ $NUM_DISPLAYS == "1" ]]; then
     echo "2 monitors set"
 fi
 
-# feh --bg-fill ~/.dwm/gorskii_lilac.jpg
-# feh --bg-fill ~/.dwm/dirt_road_painting.png
-# feh --bg-fill ~/.config/i3/background.jpg
-# feh --bg-fill ~/.config/i3/dog_computer.jpg
-feh --bg-fill ~/.config/i3/night_mountain_background.jpg
-
+~/.fehbg
 
 # picom --config ~/.config/picom/picom.conf

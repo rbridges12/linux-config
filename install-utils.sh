@@ -5,13 +5,6 @@ make \
 cmake \
 gcc \
 build-essential \
-# libx11-dev \
-# libxinerama-dev \
-# libxft-dev \
-# libxcb-res0-dev \
-# libx11-xcb-dev \
-# xorg \
-# xinit \
 fonts-hack-ttf \
 fonts-font-awesome \
 redshift \

@@ -1,11 +1,10 @@
 cd ~/repos/linux-config
 
-# cp -r .dwm ~/
 # cp -r .vim ~/
 # cp .vimrc ~/
 # cp .bashrc ~/
-# cp .zshrc ~/
-cp .xinitrc ~/
+cp .zshrc ~/
+# cp .xinitrc ~/
 cp .Xresources ~/
 cp .fehbg ~/
 # cp settings.json ~/.config/Code/User/

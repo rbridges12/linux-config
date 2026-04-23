@@ -201,6 +201,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id flameshot &
 exec --no-startup-id ~/.config/i3/monitor_setup.sh
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
+exec --no-startup-id setxkbmap -option caps:escape
+exec --no-startup-id xinput set-prop 12 362 1 # enable tap to click for touchpad
 
 exec_always --no-startup-id ~/.config/i3/polybar.sh &
 exec_always --no-startup-id snixembed --fork &
