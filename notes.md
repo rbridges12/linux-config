@@ -1,3 +1,13 @@
+## git/github setup
+- make sure git is installed
+- ssh-keygen -t ed25519 -C "my@email"
+- open github account -> settings -> SSH and GPG keys -> New SSH key
+- copy contents of `~/.ssh/id_ed25519.pub` into github
+- clone a repo with SSH to confirm it works
+
+Sources
+- [github docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
 ## System Tray With i3/polybar
 Once a system tray is added to the polybar config, a background application called snixembed must be installed to interoperate between old and new status notification protocols.
 
@@ -26,6 +36,12 @@ when you apt install i3-gaps and then attempt to run i3wm with gaps in the confi
 ## fully transferring vscode config
 Instead of trying to be a Linux purist and set up a script to fully copy over and transfer all of the VSCode config files to a new installation, I've chosen to just use the built in VSCode settings sync feature that does it all for me really easily. One small thing to note if you get an error about password storage when trying to log into a GitHub account is that you may have to manually tell it to use gnome keyring. Further instructions in the sources.
 
+To make it use gnome-keyring which is necessary to do manually in i3:
+- `sudo apt install gnome-keyring`
+- open vscode with `code --password-store="gnome-libsecret"`
+- if that works, Ctrl-Shift+P and find "Preferences: Configure Runtime Arguments" command, then set `"password-store":"gnome-libsecret"` in the argv.json file
+- restart code and it should work
+
 In order to make the latex-workshop extension work, you also need to install texlive and latexmk: `sudo apt install texlive latexmk`.
 
 Sources:
@@ -38,8 +54,21 @@ Sources:
 Sources:
 - [polybar docs](https://github.com/polybar/polybar/wiki/Fonts)
 
+## Python
+- check that `python3` is installed
+- install pip: `sudo apt install python3-pip`
+
+
 ## zsh
 Use oh-my-zsh with "lukerandall" theme, `.zshrc` file is provided in this repo.
+- first copy over `.zshrc` from this repo into home dir
+- To install, run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` or whatever is specified in their website.
+- install plugins by cloning their git repositories into `$ZSH_CUSTOM/plugins`
+  - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  - `git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode`
+  - `sudo apt install fzf`
+  - `sudo apt install python3-virtualenvwrapper`
 
 plugins:
 - zsh-vi-mode
@@ -68,6 +97,26 @@ use-theme-colors=false
 
 This can be exported using `dconf dump /org/gnome/terminal/ > gnome_terminal_settings.txt` and imported using `dconf load /org/gnome/terminal/ < gnome_terminal_settings.txt`. My `gnome_terminal_settings.txt` is provided in the repo.
 
+How to set terminal tab titles:
+By default oh-my-zsh sets an automatic tab title meaning no command to overwrite it will work. This is disabled in my .zshrc with ` DISABLE_AUTO_TITLE="true"`.
+
+Now the title can be set easily by including the following in bash/zshrc:
+```bash
+set-title() {
+  # If no arguments, show usage
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: set-title <new title>"
+    return 1
+  fi
+
+  # Join all arguments into a single string
+  local title="$*"
+
+  # Set terminal (tab) title
+  print -Pn "\e]0;${title}\a"
+}
+```
+
 sources:
 - [reddit post](https://www.reddit.com/r/Ubuntu/comments/mjrqxy/how_to_export_gnome_terminal_settings_profiles/)
 
@@ -95,8 +144,33 @@ Update: on our new router, this has started happening again very frequently (may
 Sources:
 - [arch wiki](https://bbs.archlinux.org/viewtopic.php?id=286981)
 
+## Installing newer kernel version
+Sometimes weird hardware driver problems can be fixed by just upgrading to a newer kernel.
+- check what kernel you have right now with `uname -r`
+- install mainline:
+```
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt update
+sudo apt install mainline
+```
+- `mainline list` to list available kernel versions
+- `sudo mainline install 6.19.10` to install a kernel version (replace with whatever version you want)
+
 ## GPG key setup
 TODO
+
+## Lock screen and screen saver
+With i3, screen saver functionality is determined by Xorg settings, which can be viewed/set with `xset`.
+- see current settings with `xet -q`, look for the "Screen Saver" section, timeout is in seconds
+- change timout with `xet dpms 0 0 <timeout>`
+- manually turn on screensaver (turn off monitor in my case) with `xset dpms force off`
+
+Use `i3lock` for lock screen, this can be setup with screensaver to get a keyboard shortcut that locks the screen and then quickly turns the monitor off. I have this in my i3 config:
+`bindsym Ctrl+$mod+l exec --no-startup-id i3lock && sleep 3 && xset dpms force off`
+
+Sources:
+- [thread about X screensaver](https://askubuntu.com/questions/763994/screen-times-out-in-i3-wm)
+- [reddit thread about i3lock](https://www.reddit.com/r/i3wm/comments/9089o2/turn_off_screen_after_a_moment_if_locked/)
 
 ## MATLAB installation/setup
 First, download the installer zip file for linux and unzip it into a directory. Then, follow the instructions in the readme as normal, by running `./install`. Follow the steps and the installer as normal except for the location to install MATLAB. Instead of the default location, choose a location in the user folder, such as `/home/riley/matlab/R20XXa`. This will allow additional packages/add-ons to be installed in place without MATLAB needing sudo privileges (this also means we don't need to run `./install` with sudo). Additionally, this means the matlab installer will not have permission to create a symlink to the executable.
@@ -131,3 +205,15 @@ Sources:
 
 ## latex
 Use latex workshop vscode extension, install texlive packages as the instructions for the extension say.
+
+## Backlight control on XPS 13 laptop
+I think I used this [repo](https://github.com/Hendrikto/backlight_control)
+
+## DS emulator
+I used [melon DS](https://github.com/melonDS-emu/melonDS)
+
+## XPS touchpad settings
+There are a few touchpad settings I've had to manually change on my XPS laptop like tap to click and enable mousepad while typing. You can do this using `xinput`:
+- `xinput list` to list all the recognized input devices (for example, my touchpad shows up as some weird code then "Touchpad" and is listed as id=12)
+- `xinput list-props <device id>` to list all the properties of a given device
+- `xinput set-prop <device id> <prop id> <value>` to set one of those properties to a new value
